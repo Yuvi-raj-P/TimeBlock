@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CEF9FA342DEE4CB300C948E1 /* ScreenTimeReporter.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = CEF9FA282DEE4CB300C948E1 /* ScreenTimeReporter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CE66BB032DED511B00138AEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +25,52 @@
 			remoteGlobalIDString = CE66BAF42DED511A00138AEC;
 			remoteInfo = TimeBlock;
 		};
+		CEF9FA322DEE4CB300C948E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE66BAED2DED511A00138AEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEF9FA272DEE4CB300C948E1;
+			remoteInfo = ScreenTimeReporter;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEF9FA392DEE4CB300C948E1 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				CEF9FA342DEE4CB300C948E1 /* ScreenTimeReporter.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE66BAF52DED511A00138AEC /* TimeBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66BB022DED511B00138AEC /* TimeBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66BB0C2DED511B00138AEC /* TimeBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF9FA282DEE4CB300C948E1 /* ScreenTimeReporter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ScreenTimeReporter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CEF9FA352DEE4CB300C948E1 /* Exceptions for "ScreenTimeReporter" folder in "ScreenTimeReporter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CEF9FA272DEE4CB300C948E1 /* ScreenTimeReporter */;
+		};
+		CEF9FA3B2DEE78B800C948E1 /* Exceptions for "ScreenTimeReporter" folder in "TimeBlock" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				TotalActivityView.swift,
+			);
+			target = CE66BAF42DED511A00138AEC /* TimeBlock */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CE66BAF72DED511A00138AEC /* TimeBlock */ = {
@@ -43,6 +86,15 @@
 		CE66BB0F2DED511B00138AEC /* TimeBlockUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TimeBlockUITests;
+			sourceTree = "<group>";
+		};
+		CEF9FA292DEE4CB300C948E1 /* ScreenTimeReporter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CEF9FA3B2DEE78B800C948E1 /* Exceptions for "ScreenTimeReporter" folder in "TimeBlock" target */,
+				CEF9FA352DEE4CB300C948E1 /* Exceptions for "ScreenTimeReporter" folder in "ScreenTimeReporter" target */,
+			);
+			path = ScreenTimeReporter;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +121,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEF9FA252DEE4CB300C948E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +137,7 @@
 				CE66BAF72DED511A00138AEC /* TimeBlock */,
 				CE66BB052DED511B00138AEC /* TimeBlockTests */,
 				CE66BB0F2DED511B00138AEC /* TimeBlockUITests */,
+				CEF9FA292DEE4CB300C948E1 /* ScreenTimeReporter */,
 				CE66BAF62DED511A00138AEC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +148,7 @@
 				CE66BAF52DED511A00138AEC /* TimeBlock.app */,
 				CE66BB022DED511B00138AEC /* TimeBlockTests.xctest */,
 				CE66BB0C2DED511B00138AEC /* TimeBlockUITests.xctest */,
+				CEF9FA282DEE4CB300C948E1 /* ScreenTimeReporter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,10 +163,12 @@
 				CE66BAF12DED511A00138AEC /* Sources */,
 				CE66BAF22DED511A00138AEC /* Frameworks */,
 				CE66BAF32DED511A00138AEC /* Resources */,
+				CEF9FA392DEE4CB300C948E1 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEF9FA332DEE4CB300C948E1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CE66BAF72DED511A00138AEC /* TimeBlock */,
@@ -163,6 +226,28 @@
 			productReference = CE66BB0C2DED511B00138AEC /* TimeBlockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CEF9FA272DEE4CB300C948E1 /* ScreenTimeReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF9FA362DEE4CB300C948E1 /* Build configuration list for PBXNativeTarget "ScreenTimeReporter" */;
+			buildPhases = (
+				CEF9FA242DEE4CB300C948E1 /* Sources */,
+				CEF9FA252DEE4CB300C948E1 /* Frameworks */,
+				CEF9FA262DEE4CB300C948E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CEF9FA292DEE4CB300C948E1 /* ScreenTimeReporter */,
+			);
+			name = ScreenTimeReporter;
+			packageProductDependencies = (
+			);
+			productName = ScreenTimeReporter;
+			productReference = CEF9FA282DEE4CB300C948E1 /* ScreenTimeReporter.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +269,9 @@
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = CE66BAF42DED511A00138AEC;
 					};
+					CEF9FA272DEE4CB300C948E1 = {
+						CreatedOnToolsVersion = 16.3;
+					};
 				};
 			};
 			buildConfigurationList = CE66BAF02DED511A00138AEC /* Build configuration list for PBXProject "TimeBlock" */;
@@ -203,6 +291,7 @@
 				CE66BAF42DED511A00138AEC /* TimeBlock */,
 				CE66BB012DED511B00138AEC /* TimeBlockTests */,
 				CE66BB0B2DED511B00138AEC /* TimeBlockUITests */,
+				CEF9FA272DEE4CB300C948E1 /* ScreenTimeReporter */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +312,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CE66BB0A2DED511B00138AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF9FA262DEE4CB300C948E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +349,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEF9FA242DEE4CB300C948E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +368,11 @@
 			isa = PBXTargetDependency;
 			target = CE66BAF42DED511A00138AEC /* TimeBlock */;
 			targetProxy = CE66BB0D2DED511B00138AEC /* PBXContainerItemProxy */;
+		};
+		CEF9FA332DEE4CB300C948E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEF9FA272DEE4CB300C948E1 /* ScreenTimeReporter */;
+			targetProxy = CEF9FA322DEE4CB300C948E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,8 +501,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeBlock/TimeBlock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -402,12 +512,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Something.TimeBlock;
+				PRODUCT_BUNDLE_IDENTIFIER = Yuvraj.TimeBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -420,8 +531,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeBlock/TimeBlock.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -429,12 +542,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Something.TimeBlock;
+				PRODUCT_BUNDLE_IDENTIFIER = Yuvraj.TimeBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -448,6 +562,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
@@ -466,6 +581,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				MARKETING_VERSION = 1.0;
@@ -483,6 +599,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Something.TimeBlockUITests;
@@ -499,6 +616,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Something.TimeBlockUITests;
@@ -507,6 +625,58 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TimeBlock;
+			};
+			name = Release;
+		};
+		CEF9FA372DEE4CB300C948E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeReporter/ScreenTimeReporter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeReporter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReporter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yuvraj.TimeBlock.ScreenTimeReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF9FA382DEE4CB300C948E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeReporter/ScreenTimeReporter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P6PV2R9443;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeReporter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeReporter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Yuvraj.TimeBlock.ScreenTimeReporter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -545,6 +715,15 @@
 			buildConfigurations = (
 				CE66BB1D2DED511B00138AEC /* Debug */,
 				CE66BB1E2DED511B00138AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF9FA362DEE4CB300C948E1 /* Build configuration list for PBXNativeTarget "ScreenTimeReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF9FA372DEE4CB300C948E1 /* Debug */,
+				CEF9FA382DEE4CB300C948E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
