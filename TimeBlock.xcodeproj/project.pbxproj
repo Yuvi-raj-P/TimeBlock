@@ -56,6 +56,40 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CEE08BD32DEFF54500A7337C /* Exceptions for "TimeBlock" folder in "TimeBlockTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Assets/Fonts/InstrumentSans-Medium.ttf",
+				"Assets/Fonts/InstrumentSerif-Italic.ttf",
+				"Assets/Fonts/InstrumentSerif-Regular.ttf",
+			);
+			target = CE66BB012DED511B00138AEC /* TimeBlockTests */;
+		};
+		CEE08BD42DEFF54500A7337C /* Exceptions for "TimeBlock" folder in "TimeBlockUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Assets/Fonts/InstrumentSans-Medium.ttf",
+				"Assets/Fonts/InstrumentSerif-Italic.ttf",
+				"Assets/Fonts/InstrumentSerif-Regular.ttf",
+			);
+			target = CE66BB0B2DED511B00138AEC /* TimeBlockUITests */;
+		};
+		CEE08BD52DEFF54500A7337C /* Exceptions for "TimeBlock" folder in "ScreenTimeReporter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Assets/Fonts/InstrumentSans-Medium.ttf",
+				"Assets/Fonts/InstrumentSerif-Italic.ttf",
+				"Assets/Fonts/InstrumentSerif-Regular.ttf",
+			);
+			target = CEF9FA272DEE4CB300C948E1 /* ScreenTimeReporter */;
+		};
+		CEE08BD72DEFF6AA00A7337C /* Exceptions for "TimeBlock" folder in "TimeBlock" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CE66BAF42DED511A00138AEC /* TimeBlock */;
+		};
 		CEF9FA352DEE4CB300C948E1 /* Exceptions for "ScreenTimeReporter" folder in "ScreenTimeReporter" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -75,6 +109,12 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CE66BAF72DED511A00138AEC /* TimeBlock */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CEE08BD72DEFF6AA00A7337C /* Exceptions for "TimeBlock" folder in "TimeBlock" target */,
+				CEE08BD32DEFF54500A7337C /* Exceptions for "TimeBlock" folder in "TimeBlockTests" target */,
+				CEE08BD42DEFF54500A7337C /* Exceptions for "TimeBlock" folder in "TimeBlockUITests" target */,
+				CEE08BD52DEFF54500A7337C /* Exceptions for "TimeBlock" folder in "ScreenTimeReporter" target */,
+			);
 			path = TimeBlock;
 			sourceTree = "<group>";
 		};
@@ -507,6 +547,7 @@
 				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeBlock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -537,6 +578,7 @@
 				DEVELOPMENT_TEAM = P6PV2R9443;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeBlock/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
