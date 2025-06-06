@@ -9,14 +9,14 @@ import SwiftUI
 
 @main
 struct TimeBlockApp: App {
-    @AppStorage("isOnboardingDone") var isOnboardingDone: Bool = false
+    @AppStorage("isOnBoardingDone") var isOnBoardingDone: Bool = false
 
         var body: some Scene {
             WindowGroup {
-                if isOnboardingDone {
+                if isOnBoardingDone {
                     ContentView()
                 } else {
-                    OnBoardingView(isOnBoardingDone: $isOnboardingDone)
+                    OnBoardingView(isOnBoardingDone: $isOnBoardingDone)
                 }
             }
         }
