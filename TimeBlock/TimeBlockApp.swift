@@ -10,11 +10,10 @@ import SwiftUI
 @main
 struct TimeBlockApp: App {
     @AppStorage("isOnBoardingDone") var isOnBoardingDone: Bool = false
-
         var body: some Scene {
             WindowGroup {
                 if isOnBoardingDone {
-                    ContentView()
+                    HomeView()
                 } else {
                     OnBoardingView(isOnBoardingDone: $isOnBoardingDone)
                 }

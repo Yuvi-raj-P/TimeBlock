@@ -14,7 +14,7 @@ struct OnBoardingView: View {
     @Binding var isOnBoardingDone: Bool
     @State private var arrowOffsetY: CGFloat = 0
     @State private var textOpacity: Double = 0
-    @State private var currentScene: Int = 2
+    @State private var currentScene: Int = 0
     @State private var scene2TextOpacity: Double = 0
     @State private var scene3TextOpacity: Double = 0
     @State private var isAuthorized: Bool = false
