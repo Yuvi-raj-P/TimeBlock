@@ -1,0 +1,4 @@
+Scene State: Intro → Permissions → Passive → Home
+
+AppStateManagement: manages UI state logic key for smooth transitions with managing variables
+

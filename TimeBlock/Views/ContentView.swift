@@ -20,8 +20,7 @@ struct ContentView: View {
         }
     @State private var isShowingActivityPicker = false
     @State private var selection = FamilyActivitySelection()
-    @State private var showPrewarmedReport = false
-    @State private var navigateToHomeView = false
+
     @State private var pickerDismissedWithoutSelection = false
     @Binding var isAppsSelected: Bool
     @State private var sparkles: [Sparkle] = []
@@ -108,7 +107,7 @@ struct ContentView: View {
                             .position(x: geometry.size.width * 0.5, y: geometry.size.height * 0.89)
                         }
                         else{
-                            HomeView()
+                            Confirmation(isConfirmationDone: .constant(false)) //Not Sure why this is here or needed as this view is not used whatsoever
                         }
                         
                     } else {
