@@ -4,7 +4,7 @@
 //
 //  Created by Yuvraj P on 6/15/25.
 //
-
+/*/
 import SwiftUI
 import DeviceActivity
 import FamilyControls
@@ -400,3 +400,4 @@ struct PulseStarViewa: View {
 #Preview{
     Confirmation(isConfirmationDone: .constant(false))
 }
+*/

@@ -74,14 +74,14 @@ struct OnBoardingView: View {
                             .foregroundColor(.white) +
                          Text(".")
                             .font(.instrumentR(size: 44))
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                         )
                         .multilineTextAlignment(.center)
                         .padding(.horizontal)
                         .opacity(scene2TextOpacity)
                         .animation(Animation.easeIn(duration: 1.5).delay(0.5), value: scene2TextOpacity)
                         Spacer().frame(height: geometry.size.height * 0.03)
-                        Text("it leaves us tired and behind on what really matters.").font(.system(size: 18)).foregroundColor(.black.opacity(0.5)).multilineTextAlignment(.center)
+                        Text("It leaves us tired and behind on what really matters.").font(.instrumentSan(size: 18)).foregroundColor(.black.opacity(0.5)).multilineTextAlignment(.center)
                             .opacity(scene2TextOpacity)
                             .animation(Animation.easeIn(duration: 1.5).delay(1.0), value: scene2TextOpacity)
                     }

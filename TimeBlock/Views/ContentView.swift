@@ -1,7 +1,7 @@
 import SwiftUI
 import DeviceActivity
 import FamilyControls
-
+/*
 struct ContentView: View {
     @State private var homeContext: DeviceActivityReport.Context = .init(rawValue: "Total Activity")
     @State private var filter = DeviceActivityFilter(
@@ -265,3 +265,4 @@ struct FourPointStar: Shape {
 #Preview {
     ContentView(isAppsSelected: .constant(false))
 }
+*/

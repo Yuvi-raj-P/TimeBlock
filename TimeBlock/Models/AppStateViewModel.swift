@@ -18,6 +18,11 @@ class AppStateViewModel: ObservableObject {
     @Published var onBoardingCompleted: Bool {
         didSet {UserDefaults.standard.set(onBoardingCompleted, forKey: "onBoardingCompleted")}
     }
+    @Published var isUninstallProtectionEnabled: Bool {
+        didSet {
+            UserDefaults.standard.set(isUninstallProtectionEnabled, forKey: "isUninstallProtectionEnabled")
+        }
+    }
     @Published var deviceActivityReady: Bool = false
     @Published var isLoadingDeviceActivity: Bool = false
     
@@ -25,6 +30,7 @@ class AppStateViewModel: ObservableObject {
         hasSeenIntro = UserDefaults.standard.bool(forKey: "hasSeenIntro")
         hasGrantedPermissions = UserDefaults.standard.bool(forKey: "hadGrantedPermissions")
         onBoardingCompleted = UserDefaults.standard.bool(forKey: "onBoardingCompleted")
+        isUninstallProtectionEnabled = UserDefaults.standard.bool(forKey: "isUninstallProtectionEnabled")
     }
     
     var currentLaunchScreen: LaunchScreenState {
@@ -33,7 +39,7 @@ class AppStateViewModel: ObservableObject {
         } else if !hasGrantedPermissions {
             return .permissions
         } else if !onBoardingCompleted {
-            return .onboarding
+            return .passiveOnboarding
         } else {
             return .home
         }
@@ -44,5 +50,13 @@ class AppStateViewModel: ObservableObject {
     }
     func markPermissionsGranted() {
         hasGrantedPermissions = true
+    }
+    func markOnboardingCompleted() {
+        onBoardingCompleted = true
+    }
+    func startDeviceActivityLoad() {
+        isLoadingDeviceActivity = true
+        deviceActivityReady = false
+        
     }
 }

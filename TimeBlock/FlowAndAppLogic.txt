@@ -1,4 +1,5 @@
-Scene State: Intro → Permissions → Passive → Home
+App → RootView → IntroView → PermissionsView → PassiveOnboardingView → HomeView
+
 
 AppStateManagement: manages UI state logic key for smooth transitions with managing variables
 
