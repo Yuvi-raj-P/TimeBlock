@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import FamilyControls
 
 class AppStateViewModel: ObservableObject {
     @Published var hasSeenIntro: Bool {
@@ -58,5 +59,14 @@ class AppStateViewModel: ObservableObject {
         isLoadingDeviceActivity = true
         deviceActivityReady = false
         
+    }
+    func saveBlockSchedule(schedule: BlockSchedule) {
+        let encoder = JSONEncoder()
+        if let data = try? encoder.encode(schedule) {
+            UserDefaults.standard.set(data, forKey: "userBlockSchedule")
+        }
+    }
+    func activateBlockSchedule(schedule: BlockSchedule) {
+        ScheduleManager.shared.activateSchedule(schedule: schedule)
     }
 }

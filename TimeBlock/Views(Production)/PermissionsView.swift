@@ -8,7 +8,7 @@ struct PermissionsView: View {
     @EnvironmentObject var appState: AppStateViewModel
     
     // State management
-    @State private var currentScene: Int = 1 // 0 = initial, 1 = sparkle animation, 2 = final
+    @State private var currentScene: Int = 0 // 0 = initial, 1 = sparkle animation, 2 = final
     @State private var isAuthorized: Bool = true
     @State private var pickerDismissedWithoutSelection = false
     @State private var familyActivitySelection = FamilyActivitySelection()
